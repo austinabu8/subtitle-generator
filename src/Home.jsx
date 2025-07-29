@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './Home.css';
 // At the top of Home.jsx, add this constant
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-render-backend-url.onrender.com'  // Replace with your actual Render URL
+  ? 'https://subtitle-ai-backend.onrender.com/'  // Replace with your actual Render URL
   : 'http://localhost:5000';
 
 const Home = () => {
