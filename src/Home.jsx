@@ -2,9 +2,10 @@
 import React, { useState } from 'react';
 import './Home.css';
 // At the top of Home.jsx, add this constant
-const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://subtitle-ai-backend.onrender.com/'  // Replace with your actual Render URL
+const API_BASE_URL = import.meta.env.PROD
+  ? 'https://subtitle-ai-backend.onrender.com'
   : 'http://localhost:5000';
+
 
 const Home = () => {
   const [videoFile, setVideoFile] = useState(null);
